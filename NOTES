@@ -1,0 +1,662 @@
+#   +-*%/ = 산술 연산자
+# = > < = 대입 연산자
+# //는 몫을 리턴해 줌
+# %는 나머지 연산자
+# 복합 연산자 = 산술 연산자, 대입 연산자 를 합친 것 ex)+=,-=,/=,//=,%=,**=
+#  (8//2*(2+2))=8나누기2 곱하기(2더하기2)
+# 8/2*4
+# 4*4
+# 16
+# 변수=값이 변하는 수
+# 변수=변수*값에서 변수*=값으로 줄여서 표현할 수 있다.
+# 이름""''쓸 수있음
+# 문자를 쓸 때 + 를 이용
+# 문자 사이 에도""
+# 변수의 이름은 띄어 쓰기가 있으면 안된다. 그대신 변수의 값은 됨
+# 문자열 안에"가 있으면 '로 가로를 치고' 가 있으면"로 친다
+# enter 위에 W 표시를 클릭 하면 \이 나온다
+# \n= enter 키
+# \t=tab 키
+# 문자열 에 \를 넣는 것 = 이스 케이프 코드
+# print 안에 ,를 쓰면 1칸이 띄어 써짐
+# sep=' ' =띄어 쓰기 1칸      #sep='  ' =띄어 쓰기 2칸    #sep=';' =문장 사이에;들어감
+# sep 앞에는 ,쓰기
+# end=' ' \n (기본값)  end 앞에도  ,  써야 함
+# 쉼표 뒤에는 띄어 쓰기!!
+# 사칙 연산 할 때는 연산은 띄어서 게산
+# 주석을 달 때도 띄어 쓰기!!
+# 마지막 줄은 비어 있는 것이 좋음
+# 변수 이름은 되도록 영어 소문자 로
+# int = 정수
+# float = 소수(실수)
+# complex = 복소수(지수)
+# 형 변환 int()  int 로 변경
+# 형 변환 float()  float 로 변경
+# 형 변환 str()  str 로 변경
+# str = 문자열
+# type (a) a의 자료 형을 알려 주는 함수
+# 기호 들도 모두 문자 이여서 "를 쓴다
+# 시가 총액 = 298
+# 8진수 쓰는 법 = 0o숫자
+# 16진수 쓰는 법 = 0x숫자
+# 제곱은... 숫자**숫자로 표현 앞 숫자가 기준값 뒤에 것이 제곱할 값.
+
+
+# 현재가 = 50000
+# PER = 15.75
+# print(s+ "!", t)
+# temp = str(15.79)
+# temp = float(temp)
+
+
+"""
+# 숙제 1 : year 변수를 정수로 바꾼뒤 3년뒤의 연도를 출력 해 보세요.
+year="2020"
+print(int(year)+3)
+
+
+# 숙제 2: 48584에 36을 곱한 값을 출력 해 보고 타입을 출력 해 보세요. (변수 사용 하기)
+master = 48584
+print(master*36)
+"""
+
+# 컴퓨터 는 십진수 말고 이진수 로 번역 하고 십진 수를 다시 보여줌
+# 파이썬 자료 형은 크게 숫자, 시퀀스, 매핑 으로 나눌 수 있다
+# 복소수 (complex) 고딩 때 배움
+# int/int 를 했을 때 float 나오는 경우도 있다
+# 시퀀스 (사용자 정의 클래스)
+# 딕셔 너리(dict) 는 값과 짝으로 이루어 진다.
+# 딕셔 너리 에서는 : 을 기준 으로 값이 짝이됨
+#  콜론의 왼쪽이 KEY 값, 오른쪽 이 value
+# bool 자료형 = true, false
+# set=집합 표현(중복x, 순서 유지x)
+# []= 글자나 숫자의 순서를 알려줌
+# 컴퓨터 는 숫자를 0부터 셈
+# [시작값-1, 끝값-1만 여기 씀]
+# 콜론 사이를 비워 두면 끝까지 감
+# 맨 뒤에 있는 것을 []로 끌고 오려면 -1을 쓴다
+# 클론을 쓸 때는 작은 수가 왼 쪽으로 (수 2개를 쓸 때)
+# replace 를 쓸 때 . 을 쓰고 바꾸고 싶은 것을 먼저 쓰고 바꿀 문자를 나중에 쓴다
+# 거꾸로 나올 려면 [::-1]을 쓴다
+# [::2] 는 2칸을 띄어 읽고 [::3]은 3칸 띄어 쓴다
+# list = 값을 담는 자료형 > 숫자와 문자의 집합을 나타 내기 쉽게 함 > 리스트 명 = [ 요소1, 요소2, 요소3]
+# 메터드 split > (쓰는 방식) .split
+# split(기준 안에서 나누는 것)
+# 문자 열에서 *을 쓰면 똑캍은 문자 열이 여러번 나온다
+# upper > 소문자 에서 대문자 로 변경
+# lower > 대문자 에서 소문자 로 변경
+# capitalize 는 첫 글자만 대문자 로
+"""
+string = 'a_b_c_d_f_e2a354a32a'
+n = string.replace("a", "A")
+print(n)
+"""
+
+"""
+# 숙제
+# 변수에 다음과 같은 문자 열이 바인딩 되어 있습 니다.
+t1 = 'python'
+t2 = 'java'
+# 문자열 더하기, 곱하 기를 사용 해서 아래와 같이 출력 해 보세요.
+# python java python java python java python java
+print((t1+" "+t2+" ")*4)
+
+
+# 2. 다음과 같이 날짜를 표현 하는 문자 열이 있을 때 연도, 월, 일로 나눠서 출력 해보 세요
+
+date = "2020-05-01"
+연도 = "2020"
+월 = "05"
+일 = "01"
+print(연도, 월, 일)
+"""
+# 리스트 이름.append(추가할 값)
+# 많은 것을 추가할 때는 리스트 이름 뒤에 더하기 를 쓴다.
+# append 는 가장 뒤에 출력됨
+# 요소를 글자,문자 사이에 집어 넣을 려면 > a,insert(넣을 위치, 넣을 값)
+# indexing = 원하는 값을 연속 적인 객체 안에서 가르킬 때 씀
+# slicing = 무언가 를 자르는 것
+# 리스트 는 무조건 리스트 랑만 더하기 가능
+# 인덱싱 이랑 슬라 이싱 은 모두 연속 적인 객체 에서만 사용 할 수 있다
+# 리스트, 문자열, 튜플 등 연속 적이 객체는 자신과 같은 타입과 연산 가능
+# len() 함수는 길이를 구하는 함수 이다
+# 11111 11111= 11칸
+# del 은 무언가 를 삭제할 수 있다
+# del a(x)는 x번째 요소 삭제 > del a[리스트 번호]
+# sort 는 숫자, 문자를 사전순 으로 정렬
+# reverse = 리스트 의 방향을 돌린다
+# 인덱스 는 문자, 숫자의 순서를 알려 준다. > a.index(요솟값)
+# 인덱스 는 먼저 있는 값을 씀 (그값에 중복이 있다면)
+# remove = 리스트 에서 첫 번째로 나오는 함수 제거 > a.remove()
+# pop= 리스트 의 x번째 요소를 리턴 하고 그 요소를 삭제 한다 > 순서는 맨 뒤부터~
+# count= 리스트 안에 x가 몇개 있는지 조사 하고 그 개수 를 리턴 하는 함수
+# extend= 원래의 리스트 에 원하는 수를 더하게 된다 > a.extend()
+# min = 최소값 > min(a)
+# max = 최대값 > max(a)
+# key 값은 리스트 와 못씀 (이유: 값이 중복 으로 될 수 없기 때문)
+
+
+"""
+숙제 
+1. 슬라 이싱 을 사용 해서 짝수를 거꾸로 출력(정렬 해서)
+a = [1, 6, 7, 8, 5, 10, 3, 4, 2, 9]
+
+정답 = a = [10, 8, 6, 4, 2] # 이렇게 나오면 됨
+
+a = ["1, 6, 7, 8, 5, 10, 3, 4, 2, 9"]
+print(a)
+
+
+# 2. 숫자를 쉼표를 제거 하고 정수 타입 으로 바꿔 보세요.
+숫자 = "5,969,782,530"
+print(type(숫자)) class('int')가 나오면 정답
+숫자 = "5,969,782,530"
+print(숫자
+"""
+# [] = 리스트 > 서랍 이라고 생각
+# {} = 집합, 딕셔 너리 > 연속 적이지 않다.
+# () = 튜플(tuple) > 데이터 저장 자료형, 요소 변경 불가.
+# list 는 자료 형이 달라도 error 가 안남
+# dic = {key1:value1, key2:value2....}
+# 딕셔 너리에 중복된 값이 있으면 뒤에 있는 값이 나옴
+# value 는 중복이 있어도 상관 x
+# set(집합)음 중복이 없어 야함!!!!!!
+# 집합은 인덱스 에 접근 불가
+# 교집합 = 집합이 2개인 경우 위 집합과 아래 집합에 있는 모든 요소
+# | 또는 union 을 사용해 교집합 과 합집합 을 구할 수 있다.
+# 차집합 = -()이용
+# bool 은 참 거짓을 구별 하는데 리스트, 튜플, 딕셔 너리가 비어 있으면 거짓 이지만 안에 무언가 가 있으면 참.( 문자 열도 마찬 가지)
+# 숫자는 0빼고 다 참!!!!
+# 깊은 참조, 앝은 참조 라는 것이 있는데 EX는 밑에 확인
+# c=[1,2,3]
+# d=c  깊은 참조
+# d=c[:]()
+# id = 컴퓨터 메모리 주소 > 실행을 하면 번호가 게속 바뀜
+# 리스트 정렬은 sort 로 / sort 랑 print 는 따로 씀
+"""
+a = [38, 53, 26, 74, 29]
+a.sort()
+print(a)
+"""
+# 26, 29, 38, 53, 79번 풀기
+
+"""
+# 26
+phone_number = "010-1111-2222"
+phone_number1234 = phone_number.replace("-","")
+print(phone_number1234)
+
+# 29
+string = 'a_b_c_d_f_e2a354a2a'
+String = string.replace('a','A')
+print(String)
+
+# 38
+상상_주식수 = "5,969,782,550"
+상상_주식수_에용 = 상상_주식수.replace(",","")
+print(상상_주식수_에용)
+
+# 53
+movie_rank =['닥터 스트_레인지', '스플릿', '럭키', '배트맨']
+movie_rank.insert(1,'슈퍼맨')
+print(movie_rank)
+
+# 74
+t=(1,2,3)
+t[0] = 'a'
+# 답 : 튜플 이랑 리스트 는 같이 못 쓴다
+
+a = "hello world\a"
+print(a)
+"""
+# \a는 소리가 남.
+# formatting = 문자열 안에 어떤 값을 삽입 하는 것
+# format 쓰는 방법 = print(넣고 싶은 것{}넣고 싶은 것).format("너을 값")
+# format ex) print(지금{}시 입니다).format("9") > 지금 9시 입니다 라고 출력.
+# 정렬 방법 = "{0: 빈칸을 채울 값 (선택) <,>,^}".format(넣을 값)
+# < = 오른쪽 정렬, > = 왼쪽 정렬, ^ = 가운데 정렬
+# join 쓰는 방법 = 변수 = "삽입 하고 싶은 문자열 과 문자".join("중간에 넣고 싶은 문자나 문자열")
+# strip 은 양쪽 문자열 안에 공백 삭제
+# r strip 은 오른쪽 문자열 안에 공백 삭제
+# l strip 은 왼쪽 문자열 안에 공백 삭제
+# 8,59,75,83,92 풀기
+"""
+print("n a v er/kakao/sk/samsung")
+
+cook = ["피자", "김밥", "만두", "양념 치킨","족발" ]
+print (len(cook))
+t = 1, 2, 3, 4
+print(type(t))
+inventory = {"메로나": [300, 20],
+              "비비빅": [400, 3],
+              "죠스바": [250, 100]}
+print(inventory["메로나"][0], "원")
+"""
+# if = 만약
+# if 다음 에는 :쓰기
+# =!는 같지 않다를 뜻함
+# == 그냥 같다(변수 선언을 할때는 = 1개, 비교 연산자 를 쓸 때는 =를 2개 쓴다 )
+"""
+money = True
+card = True
+if money >= 3000 or card:
+   print("택시를 타고 가라")
+else:
+   print("걸어 가라")
+
+if money:
+   print("택시를 타고 가라")
+else:
+   print("걸어 가라")
+money = 3000
+if money >= 3000:
+   print("택시를 타고 가라")
+else:
+   print("걸어 가라")
+"""
+# x or y = x와 y 둘 중 하나만 참 이어도 참이다.
+# x and y = x와 y 모두 참 이어야 참이다.
+# not x	= x가 거짓 이면 참이다.
+# in = ~안에 있는
+# not in = ~ 안에 있지 않는 것
+# pass 는 if 문을 넘어 갈 수 있게 함
+# islower 함수는 문자의 소문자 여부 판단.
+"""
+print()
+a = int(input())
+if a % 2 ==0:
+   print("짝수")
+else:
+   print("홀수")
+
+fruit = ["사과", "포도", "홍시"]
+print()
+a = input("좋아 하는 과일은?")
+if a in fruit:
+   print("정답")
+else:
+   print("오답")
+
+warn_investment_list = ["Microsoft", "Google", "N a v e r", "Kakao", "SAMSUNG", "LG"]
+print()
+a = input()
+if a in warn_investment_list:
+   print("투자 경고 종목 입니당")
+else:
+   print("투자 경고 종목이 아닙 니당")
+fruit = {"봄" : "딸기", "여름" : "토마토", "가을" : "사과"}
+fruit.keys()
+print()
+a = input()
+if a in fruit:
+    print("yes")
+else:
+    print("no")
+
+# 121~130 중 3개풀기
+
+# 121
+a = input("")
+if a.islower():
+    print(a.upper())
+else:
+    print(a.lower())
+
+# 122
+점수 = int(input("점수: "))
+if 81 <= 점수:
+    print("A등급 입니다")
+elif 61 <= 점수:
+    print("B등급 입니다")
+elif 41 <= 점수:
+    print("C등급 입니다")
+elif 21 <= 점수:
+    print("D등급 입니다")
+else:
+    print("E등급 입니다")
+
+# 125
+number = input("휴대 전화 번호 입력: ")
+n = number[0:3]
+a = "알수 없는"
+if n == "011":
+    a = "SKT"
+elif n == "016":
+    a = "KT"
+elif n == "019":
+    a = "LGU"
+
+print(f"당신은 {a} 사용자 입니다.")
+
+print()
+a = input()
+a = a. split(" ")
+환율 = ["엔", "달러", "유로", "위안"]
+if a[1] == 환율[0]:
+    print(int(a[0]) * 1096)
+elif a[1] == 환율[1]:
+    print(int(a[0]) * 1167)
+elif a[1] == 환율[2]:
+    print(int(a[0]) * 1268)
+else:
+    print(int(a[0]) * 171)
+
+num1 = input("input number1: ")
+num2 = input("input number2: ")
+num3 = input("input number3: ")
+num1 = int(num1)
+num2 = int(num2)
+num3 = int(num3)
+
+if num1 >= num2 and num1 >= num3:
+    print(num1)
+elif num2 >= num1 and num2 >= num3:
+    print(num2)
+else:
+    print(num3)
+
+print()
+a = input("주민 등록 번호를 쓰시오")
+if a[7] == "1" or a[7] == "3":
+    print("남자")  
+else:
+    print("여자")
+
+import requests
+btc = requests.get("https://api.bithumb.com/public/ticker/").json()['data']
+print(btc)
+# "126, 128, 129"
+
+우편_번호 = input("우편 번호는? ")
+if 우편_번호[0:3] in ["010", "011", "012"]:
+    print("강북")
+elif 우편_번호[0:3] in ["014", "015", "016"]:
+    print("도봉")
+else:
+    print("노원")
+
+letter = input("주민 등록 번호는?")
+back = letter.split("-")[1]
+if 0 <= int(back[1:3]) <= 8:
+    print("Seoul")
+else:
+    print("somewhere in the world but not Seoul")
+
+주민_등록 = input("주민 등록 번호는?")
+
+number = [2,3,4,5,6,7,8,9,2,3,4,5]
+주민_등록 = 주민_등록.replace("-","")
+번호 = list(map(int, 주민_등록[0:-1]))
+print(주민_등록)
+print(번호)"""
+
+# map = a b 형태로 존재 하고 b 리스트 안에 요소 들을 a 리스트 자료형 으로 바꾸어 놓은다. map(a ,b) 라고 씀
+# while 조건식 쓰는 방법(기본 형태)
+# 초기식
+#   while 조건식
+#       코드
+#       증감식
+#       ...
+# while 문 뒤에도: 쓰기
+# 초기식: while 문의 조건에 들어갈 변수 선언, (생략 가능)
+# 조건식: 조건이 거짓이 될 때까지 반복,
+# 증감식: 조건식 의 변수를 증가 또는 감소 시켜서 조건식 이 거짓이 되도록 한다.
+# break 는 while 문을 멈출 때 쓴다.
+"""
+num = 0
+while True:
+    num+=1
+    print(num)
+# 이걸 멈추기 위해 break 를 쓴다.
+    if num == 100000:
+        break
+
+
+리스트 = ["SK 하이 닉스", "삼성 전자", "LG 전자"]
+num = 0
+while num < 3:
+    print(len(리스트[num]))
+    num += 1
+
+리스트 = [1, 2, 3]
+num = 0
+while num < 3:
+    print(3, "x",리스트[num],"=",3*(num+1))
+    num += 1
+
+리스트 = ["가", "나", "다", "라"]
+num = 3
+while num > -1:
+    print(리스트[num])
+    num -= 1
+
+리스트 = [3, -20, -3, 44]
+num = 0
+while num < 4:
+
+    if 리스트[num] < 0:
+        print(리스트[num])
+    num += 1
+
+리스트 = ["A", "b", "c", "D"]
+num = 0
+while num < 4:
+    if 리스트[num].isupper():
+        print(리스트[num])
+    num += 1
+"""
+
+# 150~160 사이 3개 (151,156,155 안됌)
+# 152, 153, 154
+"""
+List = [3, 100, 23, 44]
+num = 0
+while num < 4:
+    if List[num] % 3 == 0:
+        print(List[num])
+        num += 1
+
+List = [13, 21, 12, 14, 30, 18]
+num = 0
+while num < 6:
+    if (List[num] < 20) and (List[num] % 3 == 0):
+        print(List[num])
+    num += 1
+
+List = ["I", "study", "python", "language", "!"]
+num = 0
+while num < 5:
+    if len(List[num]) >= 3:
+        print(List[num])
+    num += 1
+
+ha_ha_ha_ha= int(input())
+num = 1
+while num <= ha_ha_ha_ha:
+    print(num, num ** 2)
+    num += 1
+
+h = 100
+c = 10
+while c != 0:
+    h = h * 0.6
+    print(11 - c, round(h, 4))
+    c -= 1
+
+# for 문의 구조
+# for 변수 in 리스트 (또는 튜플, 문자열)
+#   수행할 문장 1
+#   수행할 문장 2
+for i in range(2002,2051,4):
+    print(i)
+num = 0
+for a in range(1, 11):
+    num += a
+
+
+
+for i in range(11, 20):
+
+    for a in range(1, 10) :
+        print(i, "x", a, " = ", a * i)
+
+# 185에서 190까지 풀기
+
+# 185, 186, 187
+mj = [[101, 102], [201, 202], [301, 302]]
+for aa in mj:
+    for mm in aa:
+        print(mm, "호")
+hello = [[101, 102], [201, 202], [301, 302]]
+for a in hello[::-1]:
+    for b in a:
+        print(b, "호")
+    
+
+a = [[101, 102], [201, 202], [301, 302]]
+for b in a[::-1]:
+    for c in b[::-1]:
+        print(c, "호")
+"""
+# print, input, len, min, max 등이 파이썬 에서 쓰는 함수 이다.
+# 기본 함수는 .이 안 들어 간다.
+
+# def  함수 이름(형식 매개 변수):
+#   실행 문장 1
+#   실행 문장 2
+#   return
+
+# 함수 이름(실 매개 변수) -> 함수 호출
+# 함수를 정의 할 때는 2칸 띄어서 쓰기
+# 형식 매개 변수에 실 매개 변수 값이 들어 가는 것
+"""
+def print_coin():
+    for i in range(100):
+        print("비트 코인")
+
+
+print_coin()
+
+
+
+def print_with_smile(mmm):
+    print(mmm+":D")
+    
+    
+print_with_smile("안녕 하세여")
+
+
+
+def print_upper_price(m):
+    print(m+m * 0.3)
+
+
+print_upper_price(1000)
+
+
+def print_arithmetic_operation(m, n):
+    print(m, "+", n, "=", m+n)
+    print(m, "-", n, "=", m-n)
+    print(m, "*", n, "=", m*n)
+    print(m, "/", n, "=", m / n)
+    
+    
+def print_max(m, n, j):
+    mx = 0
+    print()
+    if m > n:
+        mx = m
+    else:
+        mx = n
+    if mx > j:
+        print(mx)
+    else:
+        print(j)
+"""
+# 211에서 225까지
+# 215번
+# def print_with_smile (string) :
+#    print (string + ":D")
+# (*) 아스테 리스크 기호 라고 부름(찐 이름)
+
+"""
+def p(point):
+    if point >= 90:
+        print("A")
+    elif point >= 80:
+        print("B")
+    elif point >= 70:
+        print("C")
+    elif point >= 60:
+        print("D")
+    else:
+        print("F")
+
+
+def m(mj):
+    python = []
+    for i in mj:
+        if i % 2 == 1:
+            python.append(i)
+"""
+# homework
+# 369 게임은 여러 명이서 차례 차례 1부터 n까지 말하며
+# 3, 6, 9가 들어 가는 숫자를 말해야 하는 사람은 숫자를 말하지 않고
+# 3, 6, 9의 개수 만큼 박수를 치는 게임 이다.
+# 예를 들어 11의 경우 3, 6, 9에 속하는 숫자가 없으 므로 그대로 “11”을 출력 한다.
+# 13의 경우 3이 있으 므로 “짝”을 출력 한다. “33”의 경우 3이 두개 있으 므로 “짝짝”을 출력 한다.
+# 36도 마찬 가지로 3과 6이 각각 하나씩 있으 므로 “짝짝”을 출력 한다.
+# *가 1개이면 튜플, 2개면 딕셔 너리.
+
+
+"""
+def avg(*n):
+    return sum(n) / len(n)
+
+
+print(avg(1, 2, 3, 4, 5, 6, 7, 8, 9))
+
+# Nan = not a number => 유효 하지 않은 숫자.
+# inf = infinity
+# abs = absolute => x의 절댓값 을 리턴 해준다.
+# sum 은 다 더해 주는 객체.
+m = [["open", "high", "low", "close"],
+     [100, 110, 70, 100],
+     [200, 210, 180, 190],
+     [300, 310, 300, 310]]
+del m[0]
+for i in m:
+    print(i[-1])
+
+
+print("369 게임 시작")
+
+
+def game(n):
+    answer = " "
+    for i in range(1, n+1):
+        count = 0
+        i = list(str(i))
+        if "3" in i:
+            count += i.count("3")
+        if "6" in i:
+            count += i.count("6")
+        if "9" in i:
+            count += i.count("9")
+        if count == 0:
+            print("".join(i))
+        else:
+            print("짝" * count)
+    return answer
+
+
+print(game(369))
+"""
+# 리스트 에서 str 로 바꾸는 방법: "리스트 의 요소 사이를 연결할 때 씀".join(문자열 로 바꿀 리스트)
+# 객체 지향 언어의 장점은 객체 간에 연관성 을 알기 쉽다.
+# 절차 지향 언어의 장점은 속도가 좀 빠르고, 프로 그램 의 진행 방향을 알기 쉽다.
+# 객체 지향 언어와 절차 지향 언어의 장단은 반대 이다.
+# 클래스 는 붕어빵 틀과 비슷 하다 (형태만 잡아줌)
+# 파이썬 이스터 에그(import antigravity)
+# 파이썬 이스터 에그 2 (import this)
+# 010-3598-2438
